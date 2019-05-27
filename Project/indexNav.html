@@ -5,19 +5,31 @@
     <link rel="stylesheet" href="myDesign.css">
     </head>
 <body>
-    <nav >
-    <ul class="navBarClass">
-        <li><a class="homeClass" href="#home">Home</a></li>
-        <li><a class="newsClass" href="#news">News</a></li>
-        <li><a class="aboutClass" href="#about">About</a></li>
-        <li><a class="contactClass" href="#contact">Contact</a></li>
-        <li><a class="float-right" href="#signin">Sign In</a></li>
-        <li><a class="float-right" href="#signup">Sign Up</a></li>
-        <li><a class="triGramClass" href="#">&#9776;</a></li>
+    <nav class="myNavBar">
+    <ul class="navBarClass" id="dropdownCLick">
+        <li class="homeClass"><a  href="#home">Home</a></li>
+        <li class="newsClass"><a href="#news">News</a></li>
+        <li class="aboutClass"><a href="#about">About</a></li>
+        <li class="contactClass"><a href="#contact">Contact</a></li>
+        <li class="float-right"><a href="#signin">Sign In</a></li>
+        <li class="float-right"><a href="#signup">Sign Up</a></li>
+        <li class="triGramClass"><a href="#" onclick="changeClass()">&#9776;</a></li>
         </ul>
 
     </nav>
+<script>
+    function changeClass(){
+        var x = document.getElementById("dropdownCLick");
+        if(x.className=="navBarClass"){
+            x.className += " responsive";
+        }else{
+            x.className = "navBarClass";
+        }
 
+    }
+
+
+    </script>
 
     </body>
 

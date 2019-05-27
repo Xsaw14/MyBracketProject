@@ -43,36 +43,81 @@ a{
 /*######### Nav Bar ############*/
 
 body{
-    display: block;
     margin: 0;
     line-height: 1;
-    padding: 0;
 }
 
 nav{
-    background-color: coral;
-    display: block;
     width: 100%;
     margin: 0;
 }
 
 ul.navBarClass{
-    font-family: cursive;
-    text-decoration-color: burlywood;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: darkgray;
+}
+
+ul li.triGramClass{
+    display: none;
 }
 
 ul li{
     list-style: none;
-    float:left;
+    float:left;/*FLoat all elements to left*/
+}
+
+ul li.float-right{
+    list-style: none;
+    float:right;/*FLoat all elements to left*/
 }
 
 ul.navBarClass li a{
-    padding: 4px;
+    display: block;
+    padding: 14px;
     text-decoration-line: none;
+    text-transform: uppercase;
+    padding: 14px;
+    text-align: center;
+}
+
+ul.navBarClass li a:hover{
+    background-color: brown;
+    color: aqua;
 }
 
 
+@media screen and (max-width:680px){
+    ul li:not(:nth-child(1)){
+        display: none;
+    }
 
+    ul.navBarClass li.triGramClass{
+        display: block;
+        float: right;
+    }
+
+    ul.navBarClass.responsive li.triGramClass{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+
+    ul.navBarClass.responsive{
+        position: relative;
+    }
+
+    ul.navBarClass.responsive li{
+        display: inline;
+        float: none;
+    }
+
+    ul.navBarClass.responsive li a{
+        display: block;
+        text-align: left;
+    }
+}
 
 
 

@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>I Love Messi</title>
+    <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+    <nav>
+    <ul class="topnav" id="dropDownClick">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#aboutus">About Us</a></li>
+    <li class="topnav-right"><a href="#signin">Sign In</a></li>
+    <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+    <li class="dropdown"><a href="#" onclick="dropdownClick()">&#9776;</a></li>
+        </ul>
+
+    </nav>
+    <div class="row">
+    <span class="col-6">Messi</span>
+    <span class="col-6">Ronaldo</span>
+    </div>
+    <div class="row">
+    <span class="col-5">Neyamr</span>
+    <span class="col-7">Iniesta</span>
+    </div>
+    <div class="row">
+    <span class="col-4">Ramos</span>
+    <span class="col-8">Ligt</span>
+    </div>
+    <div class="row">
+    <span class="col-3">Stegen</span>
+    <span class="col-9">Buffon</span>
+    </div>
+
+    <script>
+    function dropdownClick(){
+        var x = document.getElementById("dropDownClick");
+        if(x.className=="topnav"){
+            x.className += " responsive";
+        }else{
+            x.className = "topnav";
+        }
+    }
+
+
+    </script>
+    </body>
+
+</html>
