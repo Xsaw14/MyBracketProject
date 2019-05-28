@@ -59,16 +59,16 @@ ul.navBarClass{
     background-color: darkgray;
 }
 
-ul li.triGramClass{
+ul.navBarClass li.triGramClass{
     display: none;
 }
 
-ul li{
+ul.navBarClass li{
     list-style: none;
     float:left;/*FLoat all elements to left*/
 }
 
-ul li.float-right{
+ul.navBarClass li.float-right{
     list-style: none;
     float:right;/*FLoat all elements to left*/
 }
@@ -86,6 +86,7 @@ ul.navBarClass li a:hover{
     background-color: brown;
     color: aqua;
 }
+
 
 
 @media screen and (max-width:680px){
@@ -119,10 +120,61 @@ ul.navBarClass li a:hover{
     }
 }
 
+#section-1-gradient{
+    background: linear-gradient( #076DFF, #65a5ff);
+    background: -webkit-linear-gradient( #076DFF, #65a5ff);
+    background: -o-linear-gradient( #076DFF, #65a5ff);
+    background: -moz-linear-gradient( #076DFF, #65a5ff);
+}
 
+.leftside-change{
+    margin-left: 30%;
+}
 
+h1.large{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    line-height: 60px;
+}
 
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    padding: 5px;
+}
 
+form h2{
+    color: white;
+    line-height: 2px;
+}
+
+.row{
+    margin-bottom: 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
 
 
 
