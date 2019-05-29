@@ -1,11 +1,9 @@
 /*html{
     font-family: sans-serif,serif,cursive;
 }
-
 h2{
     font-size: 30px;
 }
-
 #id_1{
     background: linear-gradient(to bottom,#cce6ff,#99ccff,#66b3ff,#3399ff);
     text-shadow: 3px 3px 4px;
@@ -13,23 +11,19 @@ h2{
     box-shadow: 3px 3px 4px RED;
     border-bottom-color: cyan;
 }
-
 body{
       background-image: url(messiback.jpg);
       background-size: cover;
     background-color: dimgrey;
     text-align: center;
 }
-
 .boxCont{
     box-shadow: 6px 6px 3px red;
 }
-
 .imgClass{
     border: 3px dashed black;
     box-shadow: 4px 4px 5px red;
 }
-
 a{
     text-decoration: none;
     font-size: 20px;
@@ -43,13 +37,29 @@ a{
 /*######### Nav Bar ############*/
 
 body{
+    display: block;
     margin: 0;
     line-height: 1;
+}
+
+label{
+    font-size: 35px;
+    font-weight: 600;
 }
 
 nav{
     width: 100%;
     margin: 0;
+}
+
+p{
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+article p{
+    font-size: 35px;
+    padding: 20px;
 }
 
 ul.navBarClass{
@@ -111,10 +121,16 @@ h1.large{
     line-height: 60px;
 }
 
+h1.section2Header{
+    font-size: 65px;
+    text-align: center;
+}
+
 input[type="text"]{
     font-size: 20px;
     width: 400px;
     padding: 5px;
+    border-radius: 10px;
 }
 
 form h2{
@@ -122,8 +138,14 @@ form h2{
     line-height: 2px;
 }
 
+div.slopeIcon img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(0/*Sh*/,0/*BG*/,0/*BX*/,0.15/*op*/),
+        2px 2px 17px 2px rgba(0/*Sh*/,0/*BG*/,0/*BX*/,1/*op*/);
+}
+
 .row{
-    margin-bottom: 10%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -136,8 +158,22 @@ form h2{
     content: "";
 }
 
+div.box{
+    text-align: center;
+    margin: 24px;
+    border-radius: 7px;
+    padding: 36px 24px 40px 24px; /*clockwise*/
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15),
+        0 2px 3px 1px rgba(0,0,0,.1);/*Horizontal position, vertical pos, blur radius, spread radius(thickness), color with opacity*/
+}
 
+img.iconMessi{
+    width: 110px;
+}
 
+div.icon{
+    width: 100%;
+}
 
 .col-1{width: 8.33%;}
 .col-2{width: 16.66%;}
@@ -152,7 +188,45 @@ form h2{
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
+button{
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
 
+button.learnMore{
+    margin:auto;
+    display: block;
+}
+
+footer.footsy{
+    background-color: gray;
+    padding-left: 10%;
+}
+
+footer.footsy h1{
+    color: white;
+    font-size: 35px;
+}
+
+footer.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    color: white;
+}
+
+footer.footsy ul li{
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+}
 
 @media screen and (max-width:680px){
     ul li:not(:nth-child(1)){
@@ -184,8 +258,22 @@ form h2{
         text-align: left;
     }
 
-    .col-6{
+    .col-6,
+    .col-4,
+    .col-7,
+    .col-5{
         width: 100%;
+        margin: 0;
+    }
+    
+    div.mobileFooter{
+        width: 50%;
+        display: block;
+    }
+    
+    div.box{
+        padding: 5px;
+        display: block;
     }
 
     div.leftside-change,
@@ -203,5 +291,15 @@ form h2{
         width: 100%;
         position: relative;
     }
+    
+    article p{
+        font-size: 25px;
+    }
+    div.slopeIcon{
+        margin: 10px;
+    }
+    
+    div.slopeIcon img{
+        width: 100%;
+    }
 }
-
