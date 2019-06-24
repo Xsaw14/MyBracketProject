@@ -1,0 +1,8 @@
+mongo - to start mongo
+use DB-NAME - to create new collection(DB)
+db.COLLECTION_NAME.insert({JSON FORMAT FILES}) - to insert the collection to mongo DB
+db.products.find()-search
+db.products.find().pretty()-search
+db.products.find({"":""}).pretty()
+db.products.update({"":""}.{$set{"":""}})
+db.products.remove({"":""})
